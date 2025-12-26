@@ -107,7 +107,7 @@
   }
 
   /* CONFIG DO ION-ICON */
-  section#competenciasDesktop .cards .card ion-icon {
+  /* section#competenciasDesktop .cards .card ion-icon {
     font-size: 5rem;
     color: var(--color-text);
   }
@@ -122,11 +122,47 @@
     font-family: "Poppins", sans-serif;
     color: #6e6e6e;
     font-size: 1.6rem;
-  }
-}
+  } */
 
-/* CONFIG DO DEVICON */
+  /* CONFIG DO DEVICON PRA DESKTOP */
 section#competenciasDesktop .cards .card i[class^="devicon-"] {
   font-size: 5rem;
   color: var(--color-text);
 }
+
+section#competenciasDesktop .cards .card span {
+    color: var(--color-text);
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  section#competenciasDesktop .cards .card p {
+    font-family: "Poppins", sans-serif;
+    color: #6e6e6e;
+    font-size: 1.6rem;
+  }
+
+  /* CONFIG DO DEVICON PRA MOBILE*/
+section#competencias .cards .card i[class^="devicon-"] {
+  font-size: 5rem;
+  color: var(--color-text);
+}
+
+section#competencias .cards .card span {
+    color: var(--color-text);
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  section#competencias .cards .card p {
+    font-family: "Poppins", sans-serif;
+    color: #6e6e6e;
+    font-size: 1.6rem;
+  }
+}
+
+
+
+
+
+
