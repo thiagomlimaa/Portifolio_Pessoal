@@ -106,6 +106,7 @@
     box-shadow: 6px 6px 30px #141414, -6px -6px 30px #0c0c0c;
   }
 
+  /* CONFIG DO ION-ICON */
   section#competenciasDesktop .cards .card ion-icon {
     font-size: 5rem;
     color: var(--color-text);
@@ -122,4 +123,10 @@
     color: #6e6e6e;
     font-size: 1.6rem;
   }
+}
+
+/* CONFIG DO DEVICON */
+section#competenciasDesktop .cards .card i[class^="devicon-"] {
+  font-size: 5rem;
+  color: var(--color-text);
 }
