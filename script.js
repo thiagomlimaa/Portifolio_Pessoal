@@ -36,3 +36,27 @@ function closeMenu() {
   body.classList.remove("no-scroll");
 }
 
+// Smooth scroll for navbar links
+document.querySelectorAll('.nav-content ul li a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    closeMenu();
+    const href = this.getAttribute('href');
+    let target;
+    if (href === '#competencias') {
+      // Check which competencias section is visible
+      const mobileSec = document.getElementById('competencias');
+      const desktopSec = document.getElementById('competenciasDesktop');
+      if (mobileSec.offsetHeight > 0) {
+        target = mobileSec;
+      } else {
+        target = desktopSec;
+      }
+    } else {
+      target = document.querySelector(href);
+    }
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
